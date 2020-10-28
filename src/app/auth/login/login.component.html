@@ -1,3 +1,41 @@
+<div class="free-top"></div>
+
 <section>
+    <div id="card">
+        <div id="card-header">
+            <header id="header">
+                <h1>one planer <span>
+                    Sign In
+                </span></h1>
+            </header>
+        </div>
+        <div id="card-body">
+            <img src="../../../assets/2.png" width="480" alt="">
     
+            <form #loginForm="ngForm" (ngsubmit)="onSubmit()">
+                <div class="i-group">
+                    <label for="useraname">name</label>
+                    <input type="text" name="username" id="username"
+                    required>
+                </div>
+                <div class="i-group">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password"
+                    required>
+                </div>
+                <label id="rme" for="rme">
+                    <input type="checkbox" name="rme" >Remember Me
+                </label>
+                
+                <input type="submit" value="Sign In">
+                <p>Don't have an account? <a [routerLink]="['/register']" href="">Sign Up</a></p>
+            </form>
+        </div>
+        <div id="card-footer">
+            <p>
+                &copy; 2020 One Planner. All Rights Reseverd | made and designed by <a href=""> S P Khonjelwayo </a>
+            </p>
+        </div>
+    </div>
 </section>
+<div class="free-float"></div>
