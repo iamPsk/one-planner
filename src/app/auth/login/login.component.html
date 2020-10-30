@@ -15,27 +15,24 @@
 
         <div id="card-body">
             <img src="../../../assets/2.png" width="480" alt="USER INTERFACE LOGIN">
-
+            <!-- {{name.errors | json}} -->
             <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
                 <div class="input-group" [class.input-error]="name.invalid && (name.touched || name.dirty)">
                     <label for="useraname">name</label>
                     <input #name="ngModel" #spy type="text" autocomplete="false" name="name" ngModel id="name" required
                         minlength="4" maxlength="18">
-                </div>
-                <div *ngIf="name.invalid && (name.touched || name.dirty)" class="alert">
+                <!-- <div style="text-transform: uppercase;" *ngIf="name.invalid && (name.touched || name.dirty)" class="alert">
                     <div *ngIf="name.errors.required">
-                        username needed for Signin
+                        username field cannot be empty !
                     </div>
                     <div *ngIf="name.errors.minlength">
-                        userna too short
+                        username too short !
                     </div>
-                    <div *ngIf="name.errors.maxlength">
-                        max length exceeded
-                    </div>
+                </div> -->
                 </div>
-                <div class="input-group">
+                <div class="input-group" [class.input-error]="name.invalid && (name.touched || name.dirty)">
                     <label for="password">password</label>
-                    <input ngModel type="password" name="password" id="password" required minlength="8">
+                    <input ngModel type="password" name="password" id="password" required minlength="8" pattern="">
                 </div>
                 <label class="marker">Remember Me
                     <input type="checkbox">
