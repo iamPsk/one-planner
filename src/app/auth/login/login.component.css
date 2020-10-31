@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vmin; /* find way to reset height. causes problems with rwd  */
+  height: 100%;
+  /* height: 100vmin; find way to reset height. causes problems with rwd  */
   background-color: rgba(187, 187, 187, 0.349);
 }
 
@@ -254,11 +255,28 @@ form > p {
 }
 
 @media (max-width: 786px) {
+  .container{
+    height: auto;
+    background-color: #04209e;
+  }
+  
+  #card{
+    border-width: 1px;
+    background-color: #fff;
+  }
+
+
   #card-body {
     flex-direction: column-reverse;
     margin: 0;
-    justify-content: center;
-    height: initial;
-    /* width: 100%; */
   }
+
+  .box-one, .box-two, .box-three, .box-four{
+    display: none;
+  }
+
+  form{
+    margin-bottom: 1.5em;
+  }
+
 }
