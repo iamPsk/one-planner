@@ -1,1 +1,42 @@
-z
+    <nav class="side">
+    <!-- TOP -->
+   <div class="side-top">
+       <div class="anchor">
+           <fa-icon class="icon" [icon]="faLightbulb"></fa-icon>
+           <a href="">Notes</a>
+       </div>
+       <div class="anchor">
+           <fa-icon class="icon"  [icon]="faBell"></fa-icon>
+           <a href="">Reminders</a>
+       </div>
+   </div> 
+
+   <!-- APP LABELS -->
+   <div *ngIf="noteList" class="side-labels">
+       <p>
+            Labels
+       </p>
+
+       <div class="notes" *ngFor="let note of noteList">
+           <div class="anchor">
+               <fa-icon class="icon" [icon]="faPlay"></fa-icon>
+               <a href="">{{note}}</a>
+           </div>
+       </div>
+   </div>
+
+   <!-- bOTTOM -->
+   <div class="side-bottom">
+       <div class="anchor">
+           <fa-icon class="icon"  [icon]="faArchive"></fa-icon>
+           <a href="">Archive</a>
+        </div>
+
+        <div class="anchor">
+            <fa-icon class="icon" [icon]="faTrashAlt"></fa-icon>
+            <a href="">Bin</a>
+        </div>
+   </div>
+   
+
+</nav>
