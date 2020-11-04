@@ -1,0 +1,85 @@
+main{
+    padding: 1em;
+    padding-top: 2em;
+    margin-left: 300px;
+}
+
+form{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0 1em;
+    margin-bottom: 1em;
+    background-color: #fff;
+}
+
+form > * {
+}
+
+input[type='text']{
+    width: 100%;
+    padding: 12px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: inherit;
+    border: none;
+    background-color: inherit;
+    outline: none;
+    
+}
+
+.icon{
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+.pinned-row{
+    padding: 1em 2em;
+}
+
+.layout{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pinned-row h3{
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+.card{
+    flex-basis: 300px;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} 
+
+.card-header h4{
+    margin-bottom: 1em;
+}
+
+.card-body{
+    margin-bottom: 1em;
+}
+
+
+.card-footer p{
+    color: rgb(109, 109, 109);
+    text-align: right;
+}
+
+.card:hover{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+}
