@@ -19,7 +19,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AuthModule,
     DashboardModule,
     AppRoutingModule,
-    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
