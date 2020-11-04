@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "one-planner": {
+    "one-plan": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/one-planner",
+            "outputPath": "dist/one-plan",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "one-planner:build"
+            "browserTarget": "one-plan:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "one-planner:build:production"
+              "browserTarget": "one-plan:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "one-planner:build"
+            "browserTarget": "one-plan:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "one-planner:serve"
+            "devServerTarget": "one-plan:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "one-planner:serve:production"
+              "devServerTarget": "one-plan:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "one-planner"
+    }
+  },
+  "defaultProject": "one-plan",
+  "cli": {
+    "analytics": "0637e3dc-d2d9-4e19-a6cf-b9d5b8fe9441"
+  }
 }
